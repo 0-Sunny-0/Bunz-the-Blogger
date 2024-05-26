@@ -12,7 +12,8 @@ Blog weebsite for the gal that might just have something to say.
 
 ## Visuals
 
-
+<img src="./assets/images/My-landing-page.png" alt="screenshot of blog landing page"/>
+<img src="" alt="screenshot of blog form page"/>
 
 ## License
 
