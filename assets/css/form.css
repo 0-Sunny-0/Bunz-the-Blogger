@@ -8,6 +8,7 @@
 body {
     margin: 0;
 }
+
 .dark{
     background-color: rgb(0, 0, 0);
 }
@@ -15,6 +16,7 @@ body {
 .light{
     background-color: white;
 }
+
 header {
     padding: 35px;
     border-style: groove;
@@ -28,9 +30,9 @@ header {
     font-size: 20px;
 }
 
-.button1:hover {
+/* .button1:hover {
     
-}
+} */
 
 .grid-container {
     display: flex;
@@ -60,8 +62,6 @@ header {
 /* .col-2 {
     height: 855px;
     align-content: center;
-    
-
 } */
 
 .img {
@@ -104,7 +104,7 @@ h1, h4 {
 
 form div input{
     height: 20px;
-width: 90%;
+    width: 90%;
 
 }
 
