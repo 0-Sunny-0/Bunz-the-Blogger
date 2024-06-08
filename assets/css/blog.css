@@ -2,122 +2,83 @@
 *::before
 *::after {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
-
 
 body {
     margin: 0;
 }
-.dark{
-    background-color: rgb(0, 0, 0);
+
+.header {
+    padding: 20px;
+    border-style: groove;
+    border: solid 5px rgb(113, 6, 235);
+    font-family: 'Sevillana', 'Arial Narrow', Arial, sans-serif;
 }
 
-.light{
-    background-color: white;
+.header h1 {
+    display: inline-block;
+    font-size: 50px;
+    color: rgb(113, 6, 235);
 }
-header {
+
+.header div {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Sevillana', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.header div ul {
+    list-style-type: none;
+}
+
+.header div ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.back {
+    background-color: rgb(113, 6, 235);
+    color: rgb(240, 13, 221);
+    font-size: 15px;
+}
+
+a:link {
+    color: rgb(240, 13, 221);
+    text-decoration: none;
+}
+
+a:visited {
+    color:rgb(240, 13, 221);
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
     padding: 35px;
     border-style: groove;
     border: solid 5px rgb(113, 6, 235);
     font-family: 'Sevillana', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(240, 13, 221);
 }
 
-.button1, .button2 {
-    float: right;
-    margin-right: 2px;
-    font-size: 20px;
-}
-
-.button1:hover {
-    
-}
-
-.grid-container {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-    border-style: groove;
-    border: solid 5px rgb(113, 6, 235);
-    align-content: space-around;
-    gap: 10px;
-    /* max-width: 100%;
-    max-height: auto; */
-}
-
-.col-1, .col-2 {
-    padding: 10px;
-    border-style: groove;
-    border: solid 2px rgb(113, 6, 235);
-    width: 50%;
-    height: 855px;
+#love h3 {
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-/* .col-2 {
-    height: 855px;
-    align-content: center;
-    
-
-} */
-
-.img {
-    max-width: 80%;
-    max-height: 95%;
-    padding-top: 20px;
-    border-radius: 50%;
-}
-
-h1 {
-    font-size: 3vw;
-}
-
-h4 {
-    font-size: 1vw;
-}
-
-h1, h4 {
-    color: rgb(240, 13, 221);
-    font-family: 'Sevillana';
-}
-
-.submission-form {
-    /* padding: 10px;
-    margin: auto; */
-    font-family: 'Sevillana', 'Arial Narrow', Arial, sans-serif;
-    /* size: 15px; */
-    width: 100%;
-}
-
-.submit {
-    /* padding: 10px 450px; */
-    margin-top: 10px;
-    background-color: black;
-    border-radius: 8px;
-    color: rgb(240, 13, 221);
-    font-family: 'Sevillana', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1vw;
-}
-
-form div input{
-    height: 20px;
-width: 90%;
-
-}
-
-@media screen and (max-width: 768px) {
-    /* .col, .submission-form, .submit {
-        width: 100%;
-    } */
-    .grid-container{
-        display: flex;
-        flex-direction:column;
-    }
-
-    .col-1, .col-2{
-        width: 100%;
-    }
 }

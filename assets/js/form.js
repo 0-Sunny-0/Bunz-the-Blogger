@@ -1,6 +1,7 @@
 // Light and dark mode toggle function
 let modeChange = document.getElementsByClassName('mode')
 
+
 for (let i = 0; i < modeChange.length; i++) {
     const element = modeChange[i];
 
@@ -16,3 +17,18 @@ for (let i = 0; i < modeChange.length; i++) {
     })
     
 }
+
+
+
+// The submit button function and saving to local storage
+function myClickFunction(event) {
+    // console.log(event);
+    document.getElementById("blogForm").submit();
+    event.preventDefault();
+    localStorage.setItem("username", "");
+    localStorage.setItem("title", "");
+    localStorage.setItem("content", "");
+}
+
+
+// localStorage.setItem("username", "");
