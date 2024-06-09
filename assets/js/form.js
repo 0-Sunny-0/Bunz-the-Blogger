@@ -1,36 +1,28 @@
-// Light and dark mode toggle function
-// let modeChange = document.getElementsByClassName('mode')
+// Global variables for local storage function
 
-// Added the below function to the logic.js file, since I want both
-// form and blog to do the same thing. 
-
-// for (let i = 0; i < modeChange.length; i++) {
-//     const element = modeChange[i];
-
-//     element.addEventListener('click', function(event){
-//         console.log(event.target.value);
-//         if (event.target.value ==='dark') {
-//             document.body.classList.add('dark')
-//             document.body.classList.remove('light')
-//         }else{
-//             document.body.classList.add('light')
-//             document.body.classList.remove('dark')
-//         }
-//     })
-    
-// }
+const blogForm = document.querySelector('#blogForm');
+const submit = document.querySelector('#submit');
 
 
+// Event listener for submission click. Be sure to include prevent default. 
+// Check console log to ensure form information has been saved. 
 
-// The submit button function and saving to local storage
-function myClickFunction(event) {
-    // console.log(event);
-    document.getElementById("blogForm").submit();
+submit.addEventListener('click', function(event) {
     event.preventDefault();
-    localStorage.setItem("username", "");
-    localStorage.setItem("title", "");
-    localStorage.setItem("content", "");
-}
+    const username = blogForm.querySelector('#username').value;
+    const title = blogForm.querySelector('#title').value;
+    const content = blogForm.querySelector('#content').value;
+
+    const formData = {
+        username: username,
+        title: title,
+        content: content
+    }; 
+
+    const formDataString = JSON.stringify(formData);
+
+    localStorage.setItem('formData', formDataString);
+    console.log('Form data has been saved to local storage.');
+});
 
 
-// localStorage.setItem("username", "");

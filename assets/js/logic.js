@@ -1,3 +1,8 @@
+// Light and dark toggle mode for both form and blog
+
+// For light and dark mode, always remember to change the 
+// coloring properties in CSS to ensure it works correctly. 
+
 let modeChange = document.getElementsByClassName('mode')
 
 for (let i = 0; i < modeChange.length; i++) {
@@ -15,3 +20,4 @@ for (let i = 0; i < modeChange.length; i++) {
     })
     
 }
+
