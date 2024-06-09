@@ -3,7 +3,7 @@
 ## Description
 
 Just a blog weebsite for the gal that might have something to say.<br>
-Upon loading the page, you will be met with a form that will allow you to add a blog submission. After pressing submit, the page will redirect to the blog landing page, which will show you a list of submitted blog entries.<br>Hope you enjoy random thoughts from my wee little mind. &#128526;
+Upon loading the page, you will be met with a form that will allow you to add a blog submission. After pressing submit, the page will redirect to the blog landing page, which will show you the submitted blog entry.<br>Hope you enjoy random thoughts from my wee little mind. &#128526;
 
 ## Links
 
@@ -13,7 +13,9 @@ Upon loading the page, you will be met with a form that will allow you to add a 
 ## Visuals
 
 <img src="./assets/images/Landing-lightmode.png" alt="screenshot of form landing page in light mode"/><br>
-<img src="./assets/images/Landing-darkmode.png" alt="screenshot of form landing page in dark mode"/>
+<img src="./assets/images/Landing-darkmode.png" alt="screenshot of form landing page in dark mode"/><br>
+<img src="./assets/images/Blog-landing-light.png" alt="screenshot of blog landing page in light mode"/><br>
+<img src="./assets/images/Blog-landing-dark.png" alt="screenshot of blog landing page in dark mode"/><br>
 
 ## Contributors
 

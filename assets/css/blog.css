@@ -64,20 +64,12 @@ a:visited {
     text-decoration: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.blogPage {
+    border: solid rgb(113, 6, 235);
+    color: rgb(240, 13, 221);
+    font-family: 'Sevillana';
+    font-size: x-large;
+}
 
 footer {
     padding: 35px;
@@ -87,6 +79,6 @@ footer {
     color: rgb(240, 13, 221);
 }
 
-#love h3 {
+p #love h3 {
     text-align: center;
 }

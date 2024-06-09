@@ -17,11 +17,12 @@ submit.addEventListener('click', function(event) {
                 return;
     };
 
+    // this is your object. it needs to be placed into an array.
     const formData = {
         username: username,
         title: title,
         content: content
-    }; 
+    };
     
     const formDataString = JSON.stringify(formData);
 
@@ -32,26 +33,5 @@ submit.addEventListener('click', function(event) {
     window.location = url;
 
 });
-
-// Function to validate if form fields have been filled out. 
-// ended up adding this to the above function. The variables were off, which 
-// was causing the function to....not function (slaps knee)
-
-// document.getElementById('blogForm').addEventListener("submit", validateForm);
-// function validateForm() {
-//     const username = document.getElementById('#username').value;
-//     const title = document.getElementById('#title').value;
-//     const content = document.getElementById('#content').value;
-
-//     if (username === '' || title === '' || content === '') {
-//         alert('Aht Aht! Fill out those fields big dawg.'); 
-//         return;
-//     };
-// };
-
-
-// function to retrieve data from local storage
-
-// const posts = localStorage.getItem('formData');
 
 
