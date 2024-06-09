@@ -1,18 +1,20 @@
-// Light and dark mode toggle function
-// let modeChange = document.getElementsByClassName('mode')
+// Function to get items from local storage and display on
+// blog page. 
 
-// for (let i = 0; i < modeChange.length; i++) {
-//     const element = modeChange[i];
+const formData = JSON.parse(localStorage.getItem('formData'));
 
-//     element.addEventListener('click', function(event){
-//         console.log(event.target.value);
-//         if (event.target.value ==='dark') {
-//             document.body.classList.add('dark')
-//             document.body.classList.remove('light')
-//         }else{
-//             document.body.classList.add('light')
-//             document.body.classList.remove('dark')
-//         }
-//     })
-    
-// }
+if (formData) {
+    const blogPostDiv = document.getElementById('blogPost');
+    blogPostDiv.innerHTML = `
+        <p>Username: ${formData.username}</p>
+        <p>Title: ${formData.title}</p>
+        <p>Content: ${formData.content}</p>
+    `;
+} else {
+    const blogPostDiv = document.getElementById('blogPost');
+    blogPostDiv.innerHTML = '<p>No information found in local storage</p>';
+
+    // var url = "./blog.html"
+    // window.location = url;
+
+};

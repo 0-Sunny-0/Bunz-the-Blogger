@@ -28,6 +28,9 @@ submit.addEventListener('click', function(event) {
     localStorage.setItem('formData', formDataString);
     console.log('Form data has been saved to local storage.');
 
+    var url = "./blog.html"
+    window.location = url;
+
 });
 
 // Function to validate if form fields have been filled out. 
@@ -49,6 +52,6 @@ submit.addEventListener('click', function(event) {
 
 // function to retrieve data from local storage
 
-const posts = localStorage.getItem('formData');
+// const posts = localStorage.getItem('formData');
 
 
